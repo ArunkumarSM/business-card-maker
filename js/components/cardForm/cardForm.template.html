@@ -43,7 +43,7 @@
             <span class="input-item-left">Telephone:</span>
             <span class="input-item-right">
                 <input class="pure-input-2-3" ng-pattern="$ctrl.phonePattern" name="phone" type="text" ng-change="$ctrl.onFieldChanges()"
-                    ng-model="$ctrl.cardData.telephone" placeholder="+17164319290">
+                    ng-model="$ctrl.cardData.telephone" placeholder="00000-000000">
                 <span class="error" ng-show="bCardForm.phone.$error.pattern">Phone number is invalid</span>
             </span>
         </div>
@@ -51,7 +51,7 @@
             <span class="input-item-left">Mobile:</span>
             <span class="input-item-right">
                 <input class="pure-input-2-3" ng-pattern="$ctrl.mobilePattern" name="mobile" type="text" ng-change="$ctrl.onFieldChanges()"
-                    ng-model="$ctrl.cardData.mobile" placeholder="+919791278524">
+                    ng-model="$ctrl.cardData.mobile" placeholder="+91 00000-00000">
                 <span class="error" ng-show="bCardForm.mobile.$error.pattern">Mobile number is invalid</span>
             </span>
         </div>
