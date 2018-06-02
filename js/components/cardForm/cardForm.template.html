@@ -23,7 +23,7 @@
             <span class="input-item-right">
                 <input class="pure-input-2-3" type="email" name="email" ng-change="$ctrl.onFieldChanges()" ng-model="$ctrl.cardData.email"
                     placeholder="harry@magic.com">
-                <span class="error" ng-show="bCardForm.email.$invalid">Provide a valid e-mail</span>
+                <span class="error" ng-show="bCardForm.email.$invalid">E-mail is invalid</span>
             </span>
         </div>
         <div class="input-item">
@@ -44,7 +44,7 @@
             <span class="input-item-right">
                 <input class="pure-input-2-3" ng-pattern="$ctrl.phonePattern" name="phone" type="text" ng-change="$ctrl.onFieldChanges()"
                     ng-model="$ctrl.cardData.telephone" placeholder="+17164319290">
-                <span class="error" ng-show="bCardForm.phone.$error.pattern">Provide a valid phone number</span>
+                <span class="error" ng-show="bCardForm.phone.$error.pattern">Phone number is invalid</span>
             </span>
         </div>
         <div class="input-item">
@@ -52,7 +52,7 @@
             <span class="input-item-right">
                 <input class="pure-input-2-3" ng-pattern="$ctrl.mobilePattern" name="mobile" type="text" ng-change="$ctrl.onFieldChanges()"
                     ng-model="$ctrl.cardData.mobile" placeholder="+919791278524">
-                <span class="error" ng-show="bCardForm.mobile.$error.pattern">Provide a valid mobile number</span>
+                <span class="error" ng-show="bCardForm.mobile.$error.pattern">Mobile number is invalid</span>
             </span>
         </div>
         <div class="input-item">

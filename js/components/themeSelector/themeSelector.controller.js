@@ -1,6 +1,5 @@
 (function () {
     function ThemeSelectorController() {
-        // Themes From : https://color.adobe.com
         this.themes = [
             { displayName: 'Leticia', className: 'leticia' },
             { displayName: 'Triadic', className: 'triadic' },
@@ -11,12 +10,18 @@
 
         this.chosenTheme = 'leticia';
 
-
+        /**
+         * Sets a default theme
+         */
         this.$onInit = function () {
             this.onThemeUpdate({ chosenTheme: 'leticia' });
         }
 
-        this.onThemeChange = function (chosenTheme) {   
+        /**
+         * Change function that gets invoked every time the theme changes.
+         * @param {*} chosenTheme 
+         */
+        this.onThemeChange = function (chosenTheme) {
             this.chosenTheme = chosenTheme;
             this.onThemeUpdate({ chosenTheme: this.chosenTheme });
         }

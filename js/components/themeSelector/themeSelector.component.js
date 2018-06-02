@@ -3,7 +3,7 @@
         templateUrl: 'js/components/themeSelector/themeSelector.template.html',
         controller: 'ThemeSelectorController',
         bindings: {
-            onThemeUpdate : '&'
+            onThemeUpdate: '&'
         }
     });
 })();
