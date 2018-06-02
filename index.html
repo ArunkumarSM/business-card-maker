@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Business Card Maker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="node_modules/purecss/build/pure-min.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+
+<body>
+    <div ng-app="bCardApp">
+        <header class="header">
+            <div class="header-item">Business Card Maker</div>
+        </header>
+        <main></main>
+    </div>
+    <!-- ToDo: Move this to webpack -->
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.min.js"></script>
+    <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+    <script src="node_modules/angular-base64-upload/dist/angular-base64-upload.min.js"></script>
+    <script src="node_modules/html2canvas/dist/html2canvas.min.js"></script>
+    <script src="node_modules/canvas2image/canvas2image.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/components/main/main.controller.js"></script>
+    <script src="js/components/main/main.component.js"></script>
+    <script src="js/components/cardPreview/cardPreview.controller.js"></script>
+    <script src="js/components/cardPreview/cardPreview.component.js"></script>
+    <script src="js/components/themeSelector/themeSelector.controller.js"></script>
+    <script src="js/components/themeSelector/themeSelector.component.js"></script>
+    <script src="js/components/cardForm/cardForm.controller.js"></script>
+    <script src="js/components/cardForm/cardForm.component.js"></script>
+</body>
+
+</html>

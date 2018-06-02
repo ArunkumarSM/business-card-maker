@@ -1,0 +1,66 @@
+<div class="container-inputs" ng-model-options="{ debounce: 300 }">
+    <form name="bCardForm" class="pure-form">
+        <div class="input-item">
+            <span class="input-item-left">Name:</span>
+            <span class="input-item-right">
+                <input class="pure-input-2-3" type="text" ng-change="$ctrl.onFieldChanges()" ng-model="$ctrl.cardData.name" placeholder="Harry Potter">
+            </span>
+        </div>
+        <div class="input-item">
+            <span class="input-item-left">Designation:</span>
+            <span class="input-item-right">
+                <input class="pure-input-2-3" type="text" ng-change="$ctrl.onFieldChanges()" ng-model="$ctrl.cardData.designation" placeholder="Auror">
+            </span>
+        </div>
+        <div class="input-item">
+            <span class="input-item-left">Company:</span>
+            <span class="input-item-right">
+                <input class="pure-input-2-3" type="text" ng-change="$ctrl.onFieldChanges()" ng-model="$ctrl.cardData.company" placeholder="Ministry of Magic">
+            </span>
+        </div>
+        <div class="input-item">
+            <span class="input-item-left">E-Mail:</span>
+            <span class="input-item-right">
+                <input class="pure-input-2-3" type="email" name="email" ng-change="$ctrl.onFieldChanges()" ng-model="$ctrl.cardData.email"
+                    placeholder="harry@magic.com">
+                <span class="error" ng-show="bCardForm.email.$invalid">Provide a valid e-mail</span>
+            </span>
+        </div>
+        <div class="input-item">
+            <span class="input-item-left">Website:</span>
+            <span class="input-item-right">
+                <input class="pure-input-2-3" type="text" ng-change="$ctrl.onFieldChanges()" ng-model="$ctrl.cardData.website" placeholder="www.pitchumani.com">
+            </span>
+        </div>
+        <!-- ToDo : Expand this to line1, line2.., -->
+        <div class="input-item">
+            <span class="input-item-left">Address:</span>
+            <span class="input-item-right">
+                <input class="pure-input-2-3" type="text" ng-change="$ctrl.onFieldChanges()" ng-model="$ctrl.cardData.address" placeholder="No.6 Vivekanandar Street, Dubai Cross Road, Dubai">
+            </span>
+        </div>
+        <div class="input-item">
+            <span class="input-item-left">Telephone:</span>
+            <span class="input-item-right">
+                <input class="pure-input-2-3" ng-pattern="$ctrl.phonePattern" name="phone" type="text" ng-change="$ctrl.onFieldChanges()"
+                    ng-model="$ctrl.cardData.telephone" placeholder="+17164319290">
+                <span class="error" ng-show="bCardForm.phone.$error.pattern">Provide a valid phone number</span>
+            </span>
+        </div>
+        <div class="input-item">
+            <span class="input-item-left">Mobile:</span>
+            <span class="input-item-right">
+                <input class="pure-input-2-3" ng-pattern="$ctrl.mobilePattern" name="mobile" type="text" ng-change="$ctrl.onFieldChanges()"
+                    ng-model="$ctrl.cardData.mobile" placeholder="+919791278524">
+                <span class="error" ng-show="bCardForm.mobile.$error.pattern">Provide a valid mobile number</span>
+            </span>
+        </div>
+        <div class="input-item">
+            <span class="input-item-left">Photo:</span>
+            <span class="input-item-right">
+                <input class="pure-input-2-3" type="file" ng-change="$ctrl.onFieldChanges()" ng-model="$ctrl.imgBase64" base-sixty-four-input
+                    accept="image/*">
+            </span>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="container-actions">
+        <span class="design-item float-r" ng-click="$ctrl.downloadCard()">
+            <i class="fa fa-download"></i>Download</span>
+        <span class="design-item float-r" ng-click="$ctrl.printCard()">
+            <i class="fa fa-print"></i>Print</span>
+    </div>
+    <card-preview card-theme="$ctrl.chosenTheme" card-data="$ctrl.cardData"></card-preview>
+    <theme-selector on-theme-update="$ctrl.onThemeUpdate(chosenTheme)"></theme-selector>
+    <card-form on-form-update="$ctrl.onFormUpdate(cardData)"></card-form>
+</div>

@@ -1,0 +1,39 @@
+<div id="card" class="card {{$ctrl.cardTheme}}">
+    <div class="card-name">
+        <span>{{$ctrl.cardData.name || 'Harry Potter'}}</span>
+    </div>
+    <div class="card-designation">
+        <span>{{$ctrl.cardData.designation || 'Auror'}}</span>
+    </div>
+    <div class="card-details">
+        <div class="card-photo in-blk w-29">
+            <img class="thumb" ng-src="{{$ctrl.cardData.photo || 'images/HarryPotter.jpg'}}" />
+        </div>
+        <div class="card-others in-blk w-70">
+            <div class="card-company">
+                <span>{{$ctrl.cardData.company || 'Ministry of Magic'}}</span>
+            </div>
+            <div class="card-email">
+                <i class="fa fa-envelope"></i>
+                <span>{{$ctrl.cardData.email || 'harry@magic.com'}}</span>
+            </div>
+            <div class="card-website">
+                <i class="fa fa-globe"></i>
+                <span>{{$ctrl.cardData.website || 'www.pitchumani.com'}}</span>
+            </div>
+            <div class="card-address">
+                <span>{{$ctrl.cardData.address || 'No.6 Vivekanandar Street, Dubai Cross Road, Dubai'}}</span>
+            </div>
+            <div class="card-contact">
+                <div class="card-contact-tel">
+                    <i class="fa fa-phone"></i>
+                    <span>{{$ctrl.cardData.telephone || '+17164319290'}}</span>
+                </div>
+                <div class="card-contact-mobile">
+                    <i class="fa fa-mobile"></i>
+                    <span>{{$ctrl.cardData.mobile || '+919791278524'}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

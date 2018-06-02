@@ -1,0 +1,4 @@
+<div class="container-designs">
+    <span ng-repeat="theme in $ctrl.themes" class="design-item" ng-class="$ctrl.chosenTheme == theme.className ? 'active' : ''"
+        ng-click="$ctrl.onThemeChange(theme.className)">{{theme.displayName}}</span>
+</div>
